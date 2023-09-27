@@ -1,0 +1,106 @@
+@font-face {
+    font-family: skry;
+    src: url(/Skranji-Bold.ttf);
+}
+.centrado{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+}
+body{
+    color: antiquewhite;
+    margin: 0 auto;
+}
+
+loader {
+    align-self: center;
+}
+.containerDetail {
+    display: grid;
+    position: relative;
+    top: 2rem;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'cabecera      cabecera'
+                         'description description'
+                          'imagen      imagen';
+    width:80%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(05, 09, 87, 0.4);
+    width: 100%;
+    height: 80vh;
+    font-family: skry;
+    background-image: url(/espacio-digital-abstracto_3840x2160_xtrafondos.com.jpg);
+    /* color-scheme: light; */
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+    background-size: cover;
+    min-width: 10em;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation: animado 1s;
+}
+
+.containerDetail h1{
+    grid-area: cabecera;
+    text-decoration: none;
+}
+.desc{
+    grid-area: description;
+    font-size: 0.8rem;
+} 
+.divDatos {
+    grid-area: datos;
+    margin-left: 10px;
+    display: flex; 
+    color: #fff;
+    font-size: 0.7rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgba(05, 09, 87, 0.4);
+    height: 54vh;
+    border-radius: 3em;
+    text-align: center;
+    border: ridge antiquewhite 5px; 
+    min-width: 40%;
+}
+
+.divExp {
+    grid-area: imagen;
+    display: flex;
+    padding: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 54vh;
+
+}
+
+.divExp img {
+    grid-area: imagen;
+    margin-right: 10px;
+    border-radius: 3em;
+    width: 70%;
+    height: 54vh;
+    border: ridge antiquewhite 5px;
+}
+
+.btn{
+    grid-area: botones;
+}
+@keyframes animado{
+    0% {
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

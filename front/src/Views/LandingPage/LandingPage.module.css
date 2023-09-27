@@ -1,0 +1,84 @@
+@font-face {
+    font-family: skry;
+    src: url(/Skranji-Bold.ttf);
+}
+.tapar {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    background-color: lightblue;
+    border-radius: 65% 65% 0 0;
+    width: 530px;
+    height: 190px;
+    flex-direction: column;
+}
+.tapar label {
+    color: rgb(05, 09, 87);
+    font-family: skry;
+    font-size: 2.5rem;
+}
+.container {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        background-image: url(/super-smash-bros-ultimate-8k_1920x1080_xtrafondos.com.jpg);
+        /* color-scheme: light; */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+}
+.container button{
+    position: relative;
+    color: antiquewhite;
+    padding: 1rem 3.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: skry;
+    font-weight: bold;
+    color: rgb(05, 09, 87);
+    z-index: 1;
+    background-image: linear-gradient(
+        150deg,
+        #9500ff,
+        #09f,
+        #00ddff
+    );
+}
+
+.container button::before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+width: 100%;
+height: 100%;
+background: linear-gradient(45deg,
+ red, blue,deeppink, blue,
+ red, blue, deeppink, blue);
+ background-size: 800%;
+ border-radius: 25px;
+ filter: blur(8px);
+ animation:glowing 20s linear infinite;
+}
+@keyframes glowing{
+    0%{
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+.border {
+    border-radius: 30px;
+    padding: 5px;
+    border: #09f ridge 5px;
+    box-shadow: 5px 5px 15px blue;
+}

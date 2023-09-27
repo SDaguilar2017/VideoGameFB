@@ -1,0 +1,64 @@
+@font-face {
+  font-family: skry;
+  src: url(/Skranji-Regular.ttf);
+}
+
+.divDos {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    position: relative;
+
+  }
+  .divDos input {
+    justify-content: space-around;
+    border-radius: 25px;
+    height: fit-content;
+    width: 12rem;
+    padding: 0.35rem;
+    border: solid #04938c 0.3em;
+    background-color: rgba(05, 09, 87, 0.3);
+    color: antiquewhite;
+    text-align: center;
+    font-family: skry;
+    transition: all 5s easy;
+  }
+  .search{
+    position: absolute;
+    right: -0;
+    height: fit-content;
+    line-height: 55px;
+    background-color: #04b3c9;
+    color: rgb(12, 20, 69);
+    border-radius: 25px;
+    /* border: solid 0.1em; */
+    align-items: center;
+    cursor: pointer;
+    padding: 0.35;
+    width: 2.5rem;
+  }
+  .divDos input:hover {
+    /* width: 12rem; */
+    background-color: rgba(05, 09, 87, 0.3);
+    transform: scale(1.05);
+    border: solid #646cff 0.1em;
+    color: #ffce00;
+    box-shadow: 0 0 20px #39ff14;
+    text-shadow: 0 0 10px #39FF14;
+  }
+  .divNav input:focus{
+    width: 12rem;
+    background-color: #04b3c9;
+    outline: none;
+    color: #434b4d;
+  }
+  .search:hover{
+    background-color: rgba(05, 09, 87, 0.3);
+    color: #39ff14;
+    box-shadow: 0 0 20px #39ff14;
+    text-shadow: 0 0 10px #39ff14;
+    transform: scale(1.05);
+    /* color: #04b3c9; */
+    cursor: pointer;
+    font-weight: 700;
+  }

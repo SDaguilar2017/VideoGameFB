@@ -1,0 +1,28 @@
+.containerCreate {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: 8.5rem;
+    
+}
+.formulario {
+    width: 500px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.errores {
+    color: red
+}
+.formRender{
+    display: flex;
+    background-color: chartreuse;
+}
+.CardRenderizada{
+    color:black;
+}

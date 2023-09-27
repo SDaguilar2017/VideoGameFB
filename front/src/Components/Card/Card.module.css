@@ -1,0 +1,122 @@
+@font-face {
+    font-family: skry;
+    src: url(/Skranji-Bold.ttf);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: skry;
+    align-items: center;
+    text-align: center;
+    padding: 0.3rem;
+    border-radius: 15px;
+    color: antiquewhite;
+    transform-style: preserve-3d;
+    transform: translateZ(-15px) rotateX(8deg);
+    animation: animado 1.5s;
+    
+}
+.container::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    /* background-image: url(./img-removebg-preview.png); */
+    opacity: 0.7;
+    z-index: -1;
+    border-radius: 30px;
+}
+.linked{
+    text-decoration: none;
+}
+.gen {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:clip;
+    width: 80%;
+
+}
+.titleName {
+    font-family: skry;
+    padding: .7rem;
+
+}
+
+.containerImg{
+    width: 100%;
+    height: 280px;
+}
+
+.container img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 0.2em;
+    border: solid #0f1a7b;
+}
+
+
+.container h2 {
+    margin: 0;
+}
+
+.container .conContorno {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.3em 0.7em;
+    background-color: #04b3c9;
+    color: rgb(12, 20, 69);
+    border-radius: 25px;
+    border: none;
+    border-radius: 0  25px 0 15px;
+    font-family: skry;
+    height: fit-content;
+    transition: transform 0.3s ease;
+    /* opacity: 0.5; */
+    font-size: 2em;
+    font-weight: 700;
+}
+
+
+.container .conContorno:focus{
+    background-color: red;
+    color: white;
+    transform: rotate(180deg);
+}
+
+.sinContorno{
+    position: absolute;
+    left: 0.3em;
+    top: 0.5em;
+    border: none;
+    background-color: transparent;
+    border: none;
+    font-size: 3em;
+    font-weight: 700;
+    transition: transform 0.3s ease;
+    padding: 0;
+}
+.container .sinContorno:hover {
+    border: none;
+    color: #39f0d7;
+    transform: scale(1.4);
+}
+.container:hover{
+    background-color: rgba(87,83,5,0.3);
+    box-shadow: 0 0 25px #39ff14;
+    text-shadow: 0 0 10px #39ff14;
+    transform: scale(1.05);
+}
+
+@keyframes animado{
+    0% {
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,59 @@
+@font-face {
+    font-family: skry;
+    src: url(/Skranji-Bold.ttf);
+}
+.container{
+    position: relative;
+    top:0.1rem;
+    display: grid;
+    grid-template-columns: repeat(5,19%);
+    gap: 10px;
+    justify-content: center;
+    margin: 10px auto;
+    width: 100%;
+
+}
+.pagination {
+    position: fixed;
+    z-index: 1;
+    grid-column: 1/6;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 0;
+
+
+.currentBtn {
+    background-color:#39ff14;
+    box-shadow: 0 0 20px #39ff14;;
+}
+
+}
+
+.pagination button{
+    font-family: skry;
+    font-size: 1rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    background-color: #04b3c9;
+    color: rgb(12, 20, 69);
+    border-radius: 25px;
+    border: solid 0.1em;
+    align-items: center;
+    margin: 0 0.5rem;
+    transform-style: preserve-3d;
+    transform: translateZ(-20px) rotateX(20deg);
+}
+
+
+.pagination button:hover{
+    background-color: rgba(05, 09, 87, 0.3);
+    color: #39ff14;
+    box-shadow: 0 0 20px #39ff14;
+    text-shadow: 0 0 10px #39ff14;
+    transform: scale(1.05);
+    /* color: #04b3c9; */
+    cursor: pointer;
+    font-weight: 700;
+}

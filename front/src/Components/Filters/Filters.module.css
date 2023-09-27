@@ -1,0 +1,72 @@
+@font-face {
+    font-family: skry;
+    src: url(/Skranji-Bold.ttf);
+}
+.containerFilters{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    justify-content: space-between;
+    border-radius: 25px;
+    height: fit-content;
+    width: 30rem;
+    background-color: rgba(05, 09, 87, 0.3);
+    color: #ececec;
+    transform-style: preserve-3d;
+    transform: translateZ(-10px) rotateX(10deg);
+    text-align: left;
+    transition: border-color 0.25s;
+}
+
+.filterOrder {
+    appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    padding: 8px;
+    border-radius: 10px;
+    background: transparent;
+    color: #333;
+    font-size: 14px;
+
+  }
+
+  .containerFilters select {
+    /* appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none; */
+    justify-content: space-between;
+    margin-right: 1em;
+    font-family: skry;
+    border-radius: 25px;
+    margin-left: 0.5em;
+    height: fit-content;
+    width: 10rem;
+    padding: 0.35rem;
+    border: solid #04938c 0.3em;
+    background-color: rgba(05, 09, 87, 0.3);
+    color: #39ff14;
+    transform-style: preserve-3d;
+    transform: translateZ(-10px) rotateX(10deg);
+    text-align: left;
+    transition: 0.25s;
+    color-scheme: rgba(05, 09, 87, 0.3);
+  }
+
+  .containerFilters select:hover {
+    background-color: rgba(05, 09, 87, 0.3);
+    transform: scale(1.05);
+    border: solid #646cff 0.1em;
+    color: #39ff14;
+    box-shadow: 0 0 20px #39ff14;
+    text-shadow: 0 0 10px #39FF14;
+  }
+
+  .containerFilters select:focus{
+    outline: none;
+    background-color: #050957;
+    color: #39ff14;
+    
+  }
